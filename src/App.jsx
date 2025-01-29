@@ -12,8 +12,9 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const apiKey = process.env.VITE_KEY;
+
   const fetchData = useCallback(async (query) => {
-    const apiKey = process.env.VITE_KEY;
     setLoading(true);
     setError(null);
 
