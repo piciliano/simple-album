@@ -14,7 +14,7 @@ function App() {
 
   const fetchData = useCallback(async (query) => {
     const apiKey = process.env.VITE_UNSPLASH_API_KEY;
-
+    console.log(apiKey)
     setLoading(true);
     setError(null);
 
