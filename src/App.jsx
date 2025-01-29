@@ -20,7 +20,7 @@ function App() {
 
     try {
       const params = {
-        client_id: apiKey,
+        client_id: process.env.VITE_KEY,
         query,
         count: 10,
       };
