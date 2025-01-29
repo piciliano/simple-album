@@ -12,7 +12,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const apiKey = process.env.VITE_KEY;
+  const apiKey = import.meta.env.VITE_KEY;
 
   const fetchData = useCallback(async (query) => {
     setLoading(true);
@@ -20,7 +20,7 @@ function App() {
 
     try {
       const params = {
-        client_id: process.env.VITE_KEY,
+        client_id: apiKey,
         query,
         count: 10,
       };
