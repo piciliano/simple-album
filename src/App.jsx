@@ -14,7 +14,6 @@ function App() {
 
   const fetchData = useCallback(async (query) => {
     const apiKey = process.env.VITE_KEY;
-    console.log(apiKey)
     setLoading(true);
     setError(null);
 
