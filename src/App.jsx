@@ -13,7 +13,7 @@ function App() {
   const [error, setError] = useState(null);
 
   const fetchData = useCallback(async (query) => {
-    const apiKey = import.meta.env.VITE_UNSPLASH_API_KEY;
+    const apiKey = process.env.MY_API_KEY;
 
     setLoading(true);
     setError(null);
